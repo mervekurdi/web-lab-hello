@@ -20,3 +20,4 @@ Bu repo iki laboratuvarı tek repoda içerir.
 
 ## Not
 - node_modules repoya eklenmez.
+- <img width="1919" height="869" alt="lab2-lighthouse png" src="https://github.com/user-attachments/assets/26eede00-12c5-4667-8ee3-3b398a8d9158" />
