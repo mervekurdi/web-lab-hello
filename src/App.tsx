@@ -5,8 +5,8 @@ export default function App() {
       <h2>LAB-1</h2>
 
       <p>
-        <strong>Ad Soyad:</strong> اكتب اسمك هنا <br />
-        <strong>Öğrenci No:</strong> اكتب رقمك هنا
+        <strong>Ad Soyad:</strong> Merve Kurdi  <br />
+        <strong>Öğrenci No:</strong> 225541602 
       </p>
     </main>
   );
