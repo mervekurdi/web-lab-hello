@@ -1,35 +1,101 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="page">
+      <header className="site-header">
+        <div className="container header-inner">
+          <div className="brand">
+            <span className="brand-dot" aria-hidden="true" />
+            <span>Merve</span>
+          </div>
 
-export default App
+          <nav aria-label="Primary">
+            <ul className="nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section className="hero container">
+          <p className="eyebrow">WEB LAB</p>
+          <h1 className="hero-title">Responsive Portfolio Page</h1>
+          <p className="hero-sub">
+            Flexbox navigation + CSS Grid cards + design tokens.
+          </p>
+
+          <div className="hero-actions">
+            <a className="btn primary" href="#projects">View Projects</a>
+            <a className="btn" href="#contact">Contact</a>
+          </div>
+        </section>
+
+        <section id="about" className="container section">
+          <h2 className="section-title">About</h2>
+          <p className="muted">
+            This page uses tokens from <code>tokens.css</code>.
+          </p>
+
+          <div className="skills">
+            <span className="tag">HTML</span>
+            <span className="tag">CSS</span>
+            <span className="tag">Flex</span>
+            <span className="tag">Grid</span>
+            <span className="tag">Responsive</span>
+          </div>
+        </section>
+
+        <section id="projects" className="container section">
+          <div className="section-head">
+            <h2 className="section-title">Projects</h2>
+            <p className="muted">Grid adapts to screen size.</p>
+          </div>
+
+          <div className="project-grid">
+            <article className="project-card">
+              <h3>Lab 1</h3>
+              <p className="muted">Basic HTML & CSS.</p>
+              <div className="card-actions">
+                <a className="link" href="#">Code</a>
+              </div>
+            </article>
+
+            <article className="project-card">
+              <h3>Lab 2</h3>
+              <p className="muted">Layout and components.</p>
+              <div className="card-actions">
+                <a className="link" href="#">Code</a>
+              </div>
+            </article>
+
+            <article className="project-card">
+              <h3>Lab 3</h3>
+              <p className="muted">Tokens + Flex + Grid.</p>
+              <div className="card-actions">
+                <a className="link" href="#">Code</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" className="container section">
+          <h2 className="section-title">Contact</h2>
+          <div className="contact-card">
+            <p className="muted">Email: example@mail.com</p>
+            <p className="muted">GitHub: github.com/mervekurdi</p>
+          </div>
+        </section>
+      </main>
+
+      <footer className="site-footer">
+        <div className="container footer-inner">
+          <span className="muted">© {new Date().getFullYear()} Merve</span>
+        </div>
+      </footer>
+    </div>
+  );
+}
